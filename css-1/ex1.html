@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="it">
+
 <head>
-    <!--
+  <!--
   
   
 
@@ -137,35 +138,120 @@
   <title>Esercitazione CSS 1: Cascata & Nesting dei tag</title>
   <style>
     /* --- Stili della pagina esercitazione (non fanno parte del compito) --- */
-    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; }
-    html,body{height:100%}
-    body{
-      margin:0; font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text); background:radial-gradient(1000px 600px at 10% -10%, #1f2937, transparent), var(--bg);
-      display:grid; place-items:center; padding:24px;
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
     }
-    .sheet{
-      background:linear-gradient(180deg, rgba(255,255,255,.02),transparent), var(--card);
-      border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:28px 28px 20px; box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    html,
+    body {
+      height: 100%
     }
-    h1{margin:.2rem 0 1rem; font-size:clamp(1.4rem, 2.5vw, 1.9rem)}
-    h2{margin:1.2rem 0 .4rem; font-size:1.05rem}
-    p,li{color:var(--text)}
-    code,kbd,pre{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
-    pre{
-      background:#0b1220; color:#d1d5db; border:1px solid rgba(255,255,255,.08); border-radius:12px;
-      padding:14px 16px; overflow:auto; margin:.6rem 0 1rem;
+
+    body {
+      margin: 0;
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1000px 600px at 10% -10%, #1f2937, transparent), var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
     }
-    .pill{display:inline-block; padding:.2rem .55rem; border:1px solid rgba(255,255,255,.15); border-radius:999px; color:var(--muted); font-size:.86rem}
-    .task{border-left:3px solid var(--accent); padding-left:.8rem; margin:.6rem 0}
-    .checklist li{margin:.25rem 0}
-    .hint{font-size:.92rem; color:var(--muted)}
-    .split{display:grid; gap:16px; grid-template-columns: 1fr; }
-    @media (min-width:880px){ .split{grid-template-columns:1fr 1fr} }
-    .btn{display:inline-block; background:#1e293b; border:1px solid rgba(255,255,255,.1); padding:.45rem .75rem; border-radius:10px; text-decoration:none; color:#e5e7eb}
-    .btn:hover{border-color:rgba(255,255,255,.25)}
+
+    .sheet {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .02), transparent), var(--card);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 18px;
+      padding: 28px 28px 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    }
+
+    h1 {
+      margin: .2rem 0 1rem;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem)
+    }
+
+    h2 {
+      margin: 1.2rem 0 .4rem;
+      font-size: 1.05rem
+    }
+
+    p,
+    li {
+      color: var(--text)
+    }
+
+    code,
+    kbd,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace
+    }
+
+    pre {
+      background: #0b1220;
+      color: #d1d5db;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 12px;
+      padding: 14px 16px;
+      overflow: auto;
+      margin: .6rem 0 1rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: .2rem .55rem;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: .86rem
+    }
+
+    .task {
+      border-left: 3px solid var(--accent);
+      padding-left: .8rem;
+      margin: .6rem 0
+    }
+
+    .checklist li {
+      margin: .25rem 0
+    }
+
+    .hint {
+      font-size: .92rem;
+      color: var(--muted)
+    }
+
+    .split {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width:880px) {
+      .split {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, .1);
+      padding: .45rem .75rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #e5e7eb
+    }
+
+    .btn:hover {
+      border-color: rgba(255, 255, 255, .25)
+    }
   </style>
 </head>
+
 <body>
   <main class="sheet" role="main" aria-labelledby="titolo">
     <div class="pill">Tecnologie Web</div>
@@ -182,7 +268,7 @@
     <div class="split">
       <section aria-label="Boilerplate">
         <h2>Boilerplate da incollare</h2>
-<pre><code>&lt;!doctype html&gt;
+        <pre><code>&lt;!doctype html&gt;
 &lt;html lang="it"&gt;
 &lt;head&gt;
   &lt;meta charset="utf-8"&gt;
@@ -227,6 +313,7 @@ nav {
   top: 0;
   left: 0;
   color: #fff5ee;
+  background-color: #fff5ee;
   padding: 5px;
   font-size: 12px;
   border-radius: 3px;
@@ -244,7 +331,7 @@ nav {
     
     &lt;section class="content intro"&gt;
       &lt;h2&gt;Introduzione&lt;/h2&gt;
-      &lt;p&gt;Benvenuto in questo tutorial avanzato su CSS! 
+      &lt;p&gt;Benvenuto in questo tutorial su CSS! 
       Qui imparerai i concetti di &lt;span class="highlight"&gt;specificità&lt;/span&gt; e &lt;span 
       class="highlight"&gt;cascata&lt;/span&gt;.&lt;/p&gt;
       &lt;p&gt;Questo è il primo paragrafo con un &lt;a href="#"&gt;link di prova&lt;/a&gt;.&lt;/p&gt;
@@ -325,4 +412,5 @@ footer a { color: gray; }                       /* F */
 
   </main>
 </body>
+
 </html>
