@@ -66,7 +66,7 @@ Solo l'esercitazione C è da consegnare per poter arrivare ad avere **FINO ad un
 
 Se scegliete di fare le esercitazioni A o B potete comunque consegnarli, se fatti bene ne terremo conto durante la discussione del progetto.
 
-**Consega valida fino alle 23:59 del giorno 3 Novembre 2025**. 
+**Consega valida fino alle 23:59 del giorno 4 Novembre 2025**. 
 
 Una consegna per studente. Zip della cartella, nominata come la vostra matricola, README.md con: struttura, scelte di design, librerie usate, crediti immagini/licenze, checklist di conformità da consegnare a `gianmarco.spinaci2 [at] unibo.it`
 
