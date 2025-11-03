@@ -13,30 +13,43 @@ Per il layout è necessario usare o `flex` o le utility dai framework seguenti (
 * [Bootstrap](https://getbootstrap.com/)
 * [Tailwind](https://tailwindcss.com/docs/installation/play-cdn)
 
-Utilizzare i tag HTML e.g., `<header>`, `<nav>`, `<main>`, `<footer>`, `<sidebar>`
+#### importare Bootstrap tramite CDN
+
+Aggiungere questo tag all'interno del tag `<head>`
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+```
+
+#### Importare Tailwind
+
+Aggiungere questo tag all'interno del tag `<head>`
+
+```
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+```
 
 ### Variabili e calcoli: 
 
-definire in :root un set di CSS Custom Properties (es. --space-1, --radius, --maxw, --brand, --text, --bg) e usare calc() per larghezze, spaziature, aspect‑ratio.
+definire in :root un set di CSS Custom Properties (es. --space-1, --radius, --maxw, --brand, --text, --bg) e usare [calc()](https://developer.mozilla.org/en-US/docs/Web/CSS/calc) per larghezze, spaziature, aspect‑ratio.
 
 ### Responsive
-Creare un design mobile‑first, con almeno 3 breakpoints (es. 480px, 768px, 1024px). Usare unità relative (rem, %, vw, ch). [MDN documentation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
+Creare un design mobile‑first, con almeno 3 breakpoints (e.g., 480px, 768px, 1024px). Usare unità relative (rem, %, vw, ch). [MDN documentation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
 
 ### Animazioni
-almeno 2 animazioni (e.g., @keyframes su hero/banner, reveal on hover, indicatori attivi in nav, transizioni su card). Includere media query @media (prefers-reduced-motion: reduce) per offrire una versione senza animazioni. [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations)
+almeno 2 animazioni (e.g., @keyframes su hero/banner, reveal on hover, transizioni su card). [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations)
 
 ### Tipografia & colori
-scala tipografica con variabili e usa una Palette con almeno 3 livelli (primario, neutri, stato). Prevedere dark mode con @media (prefers-color-scheme: dark).
+scala tipografica con variabili e usa una Palette con 3-5 colori. 
 
 Per qualche spunto, guarda su [Coolors.co](https://coolors.co/)
 
 ### accessibilità a11y: 
 
-HTML semantico (landmarks: header, nav, main, aside, footer), focus visibile, testo alternativo alle immagini, skip link all’inizio della pagina. [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+HTML semantico (landmarks: header, nav, main, aside, footer), focus visibile, testo alternativo alle immagini. [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 
 ## Struttura repo:
 ```
--progetto
+-progetto (o matricola per consegna)
   -assets/
     -css/     # dividere file con variabili e file con stili
     -imgs/    # Se ci sono delle immaigni
@@ -49,9 +62,9 @@ HTML semantico (landmarks: header, nav, main, aside, footer), focus visibile, te
 HTML valido, nessun inline style, non usare `!important` classi coerenti, commenti di sezione.
 
 ## Consegna
-Solo il progetto C è da consegnare per poter arrivare ad avere **fino** ad un punto in più durante la discussione del progetto. Il migliore verrà scelto come template per il sito web delle esercitazioni dei prossimi anni.
+Solo l'esercitazione C è da consegnare per poter arrivare ad avere **fino** ad un punto in più durante la discussione del progetto. Il migliore verrà scelto come template per il sito web delle esercitazioni dei prossimi anni.
 
-Se scegliete di fare i progetti A e B potete comunque consegnarli, se fatti bene ne terremo conto durante la discussione del progetto.
+Se scegliete di fare le esercitazioni A o B potete comunque consegnarli, se fatti bene ne terremo conto durante la discussione del progetto.
 
 **Consega valida fino alle 23:59 del giorno 3 Novembre 2025**. 
 
@@ -60,17 +73,17 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 ### Checklist di accettazione
 
 * Nessun JavaScript
-* Layout con Flex/Bootstrap (preferiti) o Tailwind
-* Variabili CSS + calc() usati
+* Layout con Flex/Bootstrap/Tailwind
+* Variabili CSS + calc() usati 
 * almeno 2 animazioni
 * 3 breakpoint mobile‑first
-* A11y: semantica, alt, contrasto, focus, skip link
+* A11y: semantica, alt, contrasto
 
-# Progetto A — Sito personale multi‑pagina
+# Esercitazione A — Sito personale multi‑pagina
 
 **Obiettivo:** creare un sito personale con almeno 3 sezioni.
 
-* `/index.html` (home con hero e call to action + navigazione alle 3 sezioni tramite navbar)
+* `/index.html` (home con [hero](https://www.subframe.com/tips/hero-image-section-design-examples) e call to action + navigazione alle 3 sezioni tramite navbar)
 
 * `/bio.html` file contenente la biografia 
   * foto profilo (anche placeholder va bene)
@@ -82,22 +95,21 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
   * aggiungere link esterni
 * `/progetti.html` pagina dei Lavori/Progetti 
   * griglia di card con immagini, titolo, descrizione breve, e link esterni se presenti
-  * card responsive (Flex o utility).
+  * card responsive.
 
 ## Altri componenti obbligatori:
-* Navbar coerente su tutte le pagine 
-* Footer con contatti/crediti (link social con icone solo via font/svg inline, niente JS).
+* Navbar e stile coerente su tutte le pagine 
+* Footer con contatti/crediti, link social.
 
 ### Animazioni suggerite
 * Keyframe “fade‑in + slide” per hero
 * Hover su card (elevazione/ombra + trasformazione lieve)
 
 ### Contenuti minimi
-* Bio: ≥ 120 parole, 1 foto (non personale, non è richiesta)
-* Interessi: ≥ 3 interessi, ognuno con 1 link
-* Progetti: ≥ 6 card
+* Interessi: almeno 3 interessi, ognuno con 1 link
+* Progetti: almeno 6 card
 
-# Progetto B — Blog personale (o ecommerce)
+# Esercitazione B — Blog personale (o ecommerce)
 
 **Obiettivo:** creare un piccolo blog statico.
 
@@ -135,8 +147,8 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 ### Contenuti minimi
 5 post (≥ 300 parole ciascuno), ciascuno con: titolo, data, tag, immagini (anche placeholder)
 
-# Progetto C — Sito delle esercitazioni di TW
-**Obiettivo:** progettare il sito che ospita le esercitazioni di Tecnologie Web. Deve unire la struttura di due siti di riferimento [[1](https://site212248.tw.cs.unibo.it/), [2](https://gspinaci.dev/esercizi_tw/)] mantenendo:
+# Esercitazione C — Sito delle esercitazioni di TW
+**Obiettivo:** progettare il sito che ospita le esercitazioni di Tecnologie Web. Deve unire il contenuto di due siti di riferimento [[1](https://site212248.tw.cs.unibo.it/), [2](https://gspinaci.dev/esercizi_tw/)] mantenendo:
 
 - Livello 1: macro‑temi (HTML, CSS, JAVASCRIPT)
 
@@ -157,8 +169,8 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 
 `/chat.html` - l'interfaccia di una chat e.g., ChatGPT (non dovrà essere interattiva, è necessario solo il design)
 
-### Componenti obbligatori
-- Sidebar sticky (o breadcrumb) per navigazione tra Livello 1–3.
+### Componenti
+- Sidebar sticky (o breadcrumb) per navigazione tra livelli.
 
 - tag con caption e scope per le liste esercizi.
 
@@ -170,23 +182,11 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 
 - Aggiungere il proprio nome tra i crediti del footer
 
-### Animazioni suggerite
-- Evidenziazione della card al focus/hover
-
-- Micro‑animazione del badge attivo nella sidebar
-
-
 # Idee aggiuntive opzionali
 - Licenze & crediti: sezione dedicata nel footer.
 
-- Component library: piccola pagina con componenti riutilizzabili (bottoni, card, callout) documentati.
+- Component library: pagina struttura base che può essere copiata e riutilizzata per nuove esercitazioni
 
-- Modalità “alto contrasto” (toggle CSS‑only via checkbox hack).
-
-- Layout stampabile del CV nel Progetto A (pagina dedicata cv.html).
-
-- Glossario nel Progetto C con definizioni (lista alfabetica, ancore locali).
+- Glossario degli esercizi
 
 - Pagina 404 statica personalizzata.
-
-- Schede “progress” con puro CSS (stati completato/in corso/non iniziato) per le esercitazioni.
