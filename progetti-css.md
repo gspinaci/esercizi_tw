@@ -97,7 +97,7 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
   * griglia di card con immagini, titolo, descrizione breve, e link esterni se presenti
   * card responsive.
 
-## Altri componenti obbligatori:
+## Altri possibili componenti:
 * Navbar e stile coerente su tutte le pagine 
 * Footer con contatti/crediti, link social.
 
@@ -109,7 +109,7 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 * Interessi: almeno 3 interessi, ognuno con 1 link
 * Progetti: almeno 6 card
 
-# Esercitazione B — Blog personale (o ecommerce)
+# Esercitazione B — Blog personale (o e-commerce)
 
 **Obiettivo:** creare un piccolo blog statico.
 
@@ -127,7 +127,7 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 
 * `/about.html`
 
-## Altri componenti obbligatori
+## Altri componenti:
 - Indice con filtri solo CSS (checkbox/radio) per tag/categorie: mostra/nasconde card post con selettori :checked + ….
 
 - Breadcrumb nei singoli post.
@@ -176,16 +176,11 @@ Zip della cartella, README.md con: struttura, scelte di design, librerie usate, 
 
 - Badge difficoltà (es. base, medio, avanzato) con colori da variabili.
 
-- Box “Materiali”: link a PDF/immagini/zip (mock).
+- Box “Materiali”: link a virtuale/MDN/W3school
 
-- Callout info/warning/success via classi utility.
+- Pagina con struttura base che può essere copiata e riutilizzata per nuove esercitazioni
 
 - Aggiungere il proprio nome tra i crediti del footer
-
-# Idee aggiuntive opzionali
-- Licenze & crediti: sezione dedicata nel footer.
-
-- Component library: pagina struttura base che può essere copiata e riutilizzata per nuove esercitazioni
 
 - Glossario degli esercizi
 
