@@ -62,13 +62,13 @@ HTML semantico (landmarks: header, nav, main, aside, footer), focus visibile, te
 HTML valido, nessun inline style, non usare `!important` classi coerenti, commenti di sezione.
 
 ## Consegna
-Solo l'esercitazione C è da consegnare per poter arrivare ad avere **fino** ad un punto in più durante la discussione del progetto. Il migliore verrà scelto come template per il sito web delle esercitazioni dei prossimi anni.
+Solo l'esercitazione C è da consegnare per poter arrivare ad avere **FINO ad un punto in più** durante la discussione del progetto. Il migliore verrà scelto come template per il sito web delle esercitazioni dei prossimi anni.
 
 Se scegliete di fare le esercitazioni A o B potete comunque consegnarli, se fatti bene ne terremo conto durante la discussione del progetto.
 
 **Consega valida fino alle 23:59 del giorno 3 Novembre 2025**. 
 
-Zip della cartella, README.md con: struttura, scelte di design, librerie usate, crediti immagini/licenze, checklist di conformità da consegnare a `gianmarco.spinaci2 [at] unibo.it`
+Una consegna per studente. Zip della cartella, nominata come la vostra matricola, README.md con: struttura, scelte di design, librerie usate, crediti immagini/licenze, checklist di conformità da consegnare a `gianmarco.spinaci2 [at] unibo.it`
 
 ### Checklist di accettazione
 
